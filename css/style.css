@@ -18,9 +18,10 @@ body {
 }
 
 h1 {
-    font-size: 52px;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
+    font-size: 64px;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
 }
 
 h2 {
