@@ -1,1 +1,56 @@
+body {
+    margin: 0;
+    background: #f5f3ee;
+    font-family: Georgia, serif;
+    color: #1b2a41;
+}
 
+header {
+    background: #1b2a41;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #f5f3ee;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.1);
+    margin-bottom: 20px;
+}
+
+button {
+    background: #1b2a41;
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background: #314b70;
+}
