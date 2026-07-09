@@ -3,92 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Dashboard</title>
+    <title>Dashboard | Aldercrest University</title>
+
+    <link rel="stylesheet" href="css/style.css">
 
     <style>
-        body{
-            margin:0;
-            background:#f4f1ea;
-            font-family:Georgia, serif;
-            color:#1b2a41;
+
+        .top-bar{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-bottom:40px;
         }
 
-        header{
-            background:#1b2a41;
-            color:white;
-            padding:25px;
-            text-align:center;
-        }
-nav{
-    margin-top:15px;
-}
-
-nav a{
-    color:#f7f4ed;
-    text-decoration:none;
-    font-weight:bold;
-    margin:0 12px;
-    font-size:18px;
-}
-
-nav a:hover{
-    color:#d4af37;
-}
-        .container{
-            max-width:900px;
-            margin:40px auto;
-            padding:20px;
-        }
-
-        .card{
+        .student-card{
             background:white;
             padding:25px;
             border-radius:10px;
-            box-shadow:0 8px 20px rgba(0,0,0,.1);
-            margin-bottom:20px;
+            box-shadow:0 5px 15px rgba(0,0,0,.08);
+            margin-bottom:30px;
         }
 
-        h2{
-            margin-top:0;
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            gap:20px;
+        }
+
+        .tile{
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,.08);
+            text-decoration:none;
+            color:#1b2a41;
+            transition:.2s;
+        }
+
+        .tile:hover{
+            transform:translateY(-4px);
+        }
+
+        .announcements{
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,.08);
+            margin-top:30px;
         }
 
         ul{
             line-height:2;
-            font-size:18px;
         }
+
     </style>
+
 </head>
 
 <body>
-<header>
-    <h1>Aldercrest University</h1>
-    <p>College of Law</p>
-
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="dashboard.html">Dashboard</a>
-    </nav>
-</header>
-
 
 <div class="container">
 
-<div class="card">
-<h2>Welcome, Camy.</h2>
+<div class="top-bar">
 
-<p><strong>Program:</strong> Juris Doctor (J.D.)</p>
-<p><strong>Semester:</strong> 1L • Fall</p>
-<p><strong>Current GPA:</strong> 4.00</p>
+<div>
+
+<h1>ALDERCREST UNIVERSITY</h1>
+
+<h2>College of Law</h2>
+
 </div>
 
-<div class="card">
-<h2>Courses</h2>
+<img src="images/crest.png" class="crest" alt="Crest">
+
+</div>
+
+<div class="student-card">
+
+<h3>Welcome Back, Camryn!</h3>
+
+<p><strong>Program:</strong> Juris Doctor (J.D.)</p>
+
+<p><strong>Student ID:</strong> AU-LAW-260001</p>
+
+<p><strong>Classification:</strong> First-Year Law Student (1L)</p>
+
+<p><strong>Term:</strong> Fall 2026</p>
+
+<p><strong>Mascot:</strong> ⚔️ Aldercrest Knights</p>
+
+</div>
+
+<div class="grid">
+
+<a class="tile" href="#">
+<h3>📚 My Courses</h3>
+<p>View your current law courses.</p>
+</a>
+
+<a class="tile" href="#">
+<h3>📅 Academic Calendar</h3>
+<p>Upcoming classes and important dates.</p>
+</a>
+
+<a class="tile" href="#">
+<h3>📂 Assignments</h3>
+<p>Track upcoming readings and papers.</p>
+</a>
+
+<a class="tile" href="#">
+<h3>📖 Law Library</h3>
+<p>Access research resources.</p>
+</a>
+
+<a class="tile" href="#">
+<h3>📊 Grades</h3>
+<p>View exam and assignment grades.</p>
+</a>
+
+<a class="tile" href="#">
+<h3>👤 Student Profile</h3>
+<p>Manage your student information.</p>
+</a>
+
+</div>
+
+<div class="announcements">
+
+<h3>University Announcements</h3>
 
 <ul>
-<li>Civil Procedure</li>
-<li>Contracts</li>
-<li>Torts</li>
-<li>Legal Research & Writing</li>
+
+<li>⚖️ Welcome to Fall Semester 2026.</li>
+
+<li>📚 Civil Procedure reading available.</li>
+
+<li>🏛️ 1L Orientation begins Monday at 9:00 AM.</li>
+
+<li>⚔️ Go Knights!</li>
+
 </ul>
 
 </div>
